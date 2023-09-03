@@ -1,0 +1,17 @@
+{
+  "simulated_shops_number": 10,
+  "simulated_years_number": 2,
+  "shop_size_distribution": {
+    "mean": 1.0,
+    "std_dev": 0.5
+  },
+  "sales_per_year_for_each_shop": 5,
+  "sale_multiplier": 10,
+  "default_daily_multipliers": "max(math::exp(-(d - 60)^2 / 1000), math::exp(-(d - 200)^2 / 1000)) * 10 + 1",
+  "default_daily_distribution": "math::exp(-(h - 12)^2 / 20) * 5",
+  "price_distribution": {
+    "mean": 50.0,
+    "std_dev": 30.0
+  },
+  "withdrawal_period_in_days": 30
+}
